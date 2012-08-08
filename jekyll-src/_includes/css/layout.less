@@ -1,0 +1,167 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  
+  background-color: @brightwhite;
+  /*background: url('../images/bg_new.png');*/
+  
+  background-repeat:no-repeat;
+  background-position: top right;
+}
+
+.debuglayout {
+  //border: 1px solid black;
+}
+
+@footerheight: 25px;
+@topbarheight: 110px;
+@leftbarwidth: 160px;
+
+/* A container should group all your columns . */
+.main-container {
+  
+  width: 1080px;
+  margin: 0 auto;
+  padding-bottom: @footerheight;
+
+
+  .main-topbar {
+    
+    height: @topbarheight;
+    margin: 24px 0px 17px 9px;
+    position: relative;
+    
+    .main-logo {
+      float: left;
+      text-align: top;
+    }
+    .main-topnav {
+      margin-left: 151px;
+      border-bottom: 1px solid @brown;
+      -webkit-box-shadow: 0px 4px 0px 0px #f8f6f2;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 920px;
+      text-align: right;
+      
+      ul {
+        
+      }
+      li {
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-left: 1px solid @brown;
+        
+      }
+      
+      li:hover{
+      	border-left: 1px solid @yellow;
+      }
+    }
+    
+  }
+
+  .main-leftbar {
+    width: @leftbarwidth;
+    float: left;
+    margin-left: 9px;
+ 
+    .navbar {
+      display: hide;
+    }
+    
+    .syndicationbar {
+      margin-top: 130px;
+      
+    }
+    
+    .syndicationbar img{
+    	width: 40px;
+    	height: 35px;
+    }
+    
+  }
+
+  .main-content {
+    margin-left: @leftbarwidth;
+    margin-right: @leftbarwidth;
+    padding: 5px;
+    background: @trwhite;
+    border: 1px solid @cardinal;
+  }
+
+}
+
+.main-footer {
+  background: @white;
+  height: @footerheight;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0px;
+}
+
+#logo{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #990000;
+    padding: 0px;
+}
+
+a:hover{
+     color: #1A3366;
+}
+
+a.red:hover{
+    color: #01835F;
+}
+
+a.green:hover{
+    color: #00808D;
+}
+
+a.blue:hover{
+    color: #2584BB;
+}
+
+a.yellow:hover{
+    color: #F0AF00;
+}
+
+a.orange:hover{
+    color: #BF6900;
+}
+
+h1{
+    color:#232f45;
+}
+
+#copyright{
+	margin-top: 6px;
+	text-align: center;
+}
+
+.site-table-contents ul{
+	display: block;
+	list-style-type: none;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+
+.site-table-contents li{
+	margin: 0;
+	margin-bottom: 2px;
+	padding: 0;
+}
+
+

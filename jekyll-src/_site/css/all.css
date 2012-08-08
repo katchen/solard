@@ -1,0 +1,307 @@
+/* RESET.CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+/* COLORS.LESS */
+/* LAYOUT.LESS */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /*background: url('../images/bg_new.png');*/
+
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+/* A container should group all your columns . */
+.main-container {
+  width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.main-container .main-topbar {
+  height: 110px;
+  margin: 24px 0px 17px 9px;
+  position: relative;
+}
+.main-container .main-topbar .main-logo {
+  float: left;
+  text-align: top;
+}
+.main-container .main-topbar .main-topnav {
+  margin-left: 151px;
+  border-bottom: 1px solid #6e6756;
+  -webkit-box-shadow: 0px 4px 0px 0px #f8f6f2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 920px;
+  text-align: right;
+}
+.main-container .main-topbar .main-topnav li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 1px solid #6e6756;
+}
+.main-container .main-topbar .main-topnav li:hover {
+  border-left: 1px solid #f7b200;
+}
+.main-container .main-leftbar {
+  width: 160px;
+  float: left;
+  margin-left: 9px;
+}
+.main-container .main-leftbar .navbar {
+  display: hide;
+}
+.main-container .main-leftbar .syndicationbar {
+  margin-top: 130px;
+}
+.main-container .main-leftbar .syndicationbar img {
+  width: 40px;
+  height: 35px;
+}
+.main-container .main-content {
+  margin-left: 160px;
+  margin-right: 160px;
+  padding: 5px;
+  background: rgba(251, 251, 251, 0.81);
+  border: 1px solid #a60000;
+}
+.main-footer {
+  background: #f8f6f2;
+  height: 25px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0px;
+}
+#logo {
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: #990000;
+  padding: 0px;
+}
+a:hover {
+  color: #1A3366;
+}
+a.red:hover {
+  color: #01835F;
+}
+a.green:hover {
+  color: #00808D;
+}
+a.blue:hover {
+  color: #2584BB;
+}
+a.yellow:hover {
+  color: #F0AF00;
+}
+a.orange:hover {
+  color: #BF6900;
+}
+h1 {
+  color: #232f45;
+}
+#copyright {
+  margin-top: 6px;
+  text-align: center;
+}
+.site-table-contents ul {
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+.site-table-contents li {
+  margin: 0;
+  margin-bottom: 2px;
+  padding: 0;
+}
+/* TYPOGRAPHY.LESS */
+.font-helvetica {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+html {
+  font-size: 100.01%;
+}
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 100%;
+  color: #5c5648;
+}
+a {
+  color: #6e6756;
+}
+a:hover {
+  color: #a60000;
+}
+.main-container {
+  line-height: 1.5;
+}
+.main-leftbar {
+  font-size: 12pt;
+}
+.main-topbar ul {
+  font-size: 17pt;
+}
+.main-logo {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14pt;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 0.6em;
+}
+p {
+  margin-bottom: 1em;
+}
+.blog-content {
+  font-family: "Bell MT," "Abadi MT Condensed Light", "Gill Sans", Arial, serif;
+  font-size: 14pt;
+}
+#copyright {
+  font-size: 8pt;
+}
+/* BLOG.LESS */
+.blog_content {
+  margin-left: 160px;
+  margin-right: 160px;
+}
