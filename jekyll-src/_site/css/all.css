@@ -280,7 +280,9 @@ a:hover {
   font-size: 12pt;
 }
 .main-topbar ul {
-  font-size: 17pt;
+  font-size: 18pt;
+  font-family: "ff-speak-web";
+  font-weight: 300;
 }
 .main-logo {
   font-family: "Open Sans", Helvetica, sans-serif;
