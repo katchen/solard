@@ -8,6 +8,23 @@
   <link rel="stylesheet" href="css/all.css" type="text/css" media="screen" charset="utf-8">
   <script type="text/javascript" src="//use.typekit.net/xxe2omr.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+  
+  <script type="text/javascript"> 
+/* hiding left nav*/
+
+$(document).ready(function(){
+	//$('#team_nav').hide(0);
+	$('#des_nav').hide(0);
+	$('#comp_nav').hide(0);
+});
+
+/* bring in */
+	function displayNav(nav_id){
+		$("#" + nav_id).show(800);
+	}
+
+</script>
   
 </head>
 <body onLoad="load()">
@@ -20,10 +37,10 @@
     </div>
     <div class="main-topnav">
       <ul>
-        <li><a href="design.html">design</a></li>
-        <li><a href="competition.html">competition</a></li>
-        <li><a href="team.html">team</a></li>
-        <li><a href="sponsors.html">sponsors</a></li>
+        <li><a id="des" href="design.html" onclick="displayNav('des_nav');">design</a></li>
+        <li><a id="comp" href="competition.html" onclick="displayNav('comp_nav');">competition</a></li>
+        <li><a id="team" href="team.html" onclick="displayNav('team_nav');">team</a></li>
+        <li><a id="spons" href="sponsors.html" onclick="displayNav('spons_nav');">sponsors</a></li>
         <li><a href="contact.html">contact</a></li>
       </ul>
     </div>
@@ -31,8 +48,8 @@
   </div>
   
   <div class="main-leftbar" id="menu">
-   <!-- 
-    <div class="navbar">
+ 
+    <div id="team_nav" class="navbar">
       <ul>
         <li><a href="#">all</a></li>
         <li><a href="#">core</a></li>
@@ -45,8 +62,7 @@
         <li><a href="#">interaction</a></li>
       </ul>
     </div>
-    -->
-     <div class="navbar">
+     <div id="des_nav" class="navbar">
       <ul>
         <li><a href="#">s</a></li>
         <li><a href="#">t</a></li>
@@ -59,6 +75,17 @@
         <li><a href="#">m</a></li>
         <li><a href="#">e</a></li>
       </ul>
+    </div>
+    
+    <div id="comp_nav" class="navbar">
+    	<ul>
+    		<li><a href="#">about</a></li>
+    		<li><a href="#">progress</a></li>
+    		<li><a href="#">gallery</a></li>
+    		<li><a href="#">outreach</a></li>
+    		<li><a href="#">press</a></li>
+    		<li><a href="#">blog</a></li>
+    	</ul>
     </div>
     
     <div class="syndicationbar">

@@ -137,8 +137,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  /*background: url('../images/bg_new.png');*/
-
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -195,8 +193,9 @@ body {
   margin-left: 160px;
   margin-right: 160px;
   padding: 5px;
-  background: rgba(251, 251, 251, 0.81);
-  border: 1px solid #a60000;
+  background: url('../images/homebg.png');
+  height: 820px;
+  width: 910px;
 }
 .main-footer {
   background: #f8f6f2;

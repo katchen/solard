@@ -8,6 +8,23 @@
   <link rel="stylesheet" href="css/all.css" type="text/css" media="screen" charset="utf-8">
   <script type="text/javascript" src="//use.typekit.net/xxe2omr.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+  
+  <script type="text/javascript"> 
+/* hiding left nav*/
+
+$(document).ready(function(){
+	//$('#team_nav').hide(0);
+	$('#des_nav').hide(0);
+	$('#comp_nav').hide(0);
+});
+
+/* bring in */
+	function displayNav(nav_id){
+		$("#" + nav_id).show(800);
+	}
+
+</script>
   
 </head>
 <body onLoad="load()">
@@ -20,10 +37,10 @@
     </div>
     <div class="main-topnav">
       <ul>
-        <li><a href="design.html">design</a></li>
-        <li><a href="competition.html">competition</a></li>
-        <li><a href="team.html">team</a></li>
-        <li><a href="sponsors.html">sponsors</a></li>
+        <li><a id="des" href="design.html" onclick="displayNav('des_nav');">design</a></li>
+        <li><a id="comp" href="competition.html" onclick="displayNav('comp_nav');">competition</a></li>
+        <li><a id="team" href="team.html" onclick="displayNav('team_nav');">team</a></li>
+        <li><a id="spons" href="sponsors.html" onclick="displayNav('spons_nav');">sponsors</a></li>
         <li><a href="contact.html">contact</a></li>
       </ul>
     </div>
@@ -31,8 +48,8 @@
   </div>
   
   <div class="main-leftbar" id="menu">
-   <!-- 
-    <div class="navbar">
+ 
+    <div id="team_nav" class="navbar">
       <ul>
         <li><a href="#">all</a></li>
         <li><a href="#">core</a></li>
@@ -45,8 +62,7 @@
         <li><a href="#">interaction</a></li>
       </ul>
     </div>
-    -->
-     <div class="navbar">
+     <div id="des_nav" class="navbar">
       <ul>
         <li><a href="#">s</a></li>
         <li><a href="#">t</a></li>
@@ -59,6 +75,17 @@
         <li><a href="#">m</a></li>
         <li><a href="#">e</a></li>
       </ul>
+    </div>
+    
+    <div id="comp_nav" class="navbar">
+    	<ul>
+    		<li><a href="#">about</a></li>
+    		<li><a href="#">progress</a></li>
+    		<li><a href="#">gallery</a></li>
+    		<li><a href="#">outreach</a></li>
+    		<li><a href="#">press</a></li>
+    		<li><a href="#">blog</a></li>
+    	</ul>
     </div>
     
     <div class="syndicationbar">
@@ -78,16 +105,19 @@
 <div id="mainpage">
 
 <h1>welcome.home</h1>
-
+<!--
 <p>Stanford’s Start.Home will revolutionize living sustainably through the seamless integration of technology in a home that can grow as your needs change. Our designs allow for easy add-ons and customization, while our pre-engineered start.core provides you with the energy efficiency needed in a net-zero home.
 </p>
 <p>
-A Start.Home is simple, elegant, and affordable. Whether you’re well versed in clean technology, or just hoping to invest in a home that can grow with you, Start.Home makes living green as simple as pushing a button.
-</p>
-<iframe class="youtube" style="height:328px;width:540px" src="http://www.youtube.com/embed/rdXcOrTS5e8?autohide=2&amp;controls=1&amp;disablekb=0&amp;fs=1&amp;hd=0&amp;loop=0&amp;rel=0&amp;showinfo=0&amp;showsearch=0&amp;wmode=transparent" width="540" height="328" frameborder="0"></iframe>
+A Start.Home is simple, elegant, and afforContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
+The standard chContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.unk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.dable. Whether you’re well versed in clean technology, or just hoping to invest in a home that can grow with you, Start.Home makes living green as simple as pushing a button.
+</p> 
+<iframe class="youtube" style="height:328px;width:540px" src="http://www.youtube.com/embed/rdXcOrTS5e8?autohide=2&amp;controls=1&amp;disablekb=0&amp;fs=1&amp;hd=0&amp;loop=0&amp;rel=0&amp;showinfo=0&amp;showsearch=0&amp;wmode=transparent" width="540" height="328" frameborder="0"></iframe> -->
 <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-<script>
+<!--<script>
 new TWTR.Widget({
   version: 2,
   type: 'search',
@@ -114,7 +144,7 @@ new TWTR.Widget({
     live: true,
     behavior: 'default'
   }
-}).render().start();
+}).render().start();-->
 </script>
 </div>
 
